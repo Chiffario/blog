@@ -18,3 +18,5 @@ This is a test post.
     {[{ users: 368818, client: "stable" },
     { users: 470201, client: "lazer" },
     { users: 16132, client: "both" }]}/>
+
+This is a test-er chart

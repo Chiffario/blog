@@ -14,7 +14,7 @@
 
 <div class="chart-box">
    <Chart {data} x="users" c="client" cRange={keyColors} height={300}>
-      	<Layer type="svg" center>
+      	<Layer center>
     		<Pie tooltip />
        	</Layer>
     	<Legend title="Clients" variant="swatches" orientation="vertical" placement="right" />

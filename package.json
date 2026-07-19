@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
+    "deploy-build": "vite build",
     "build": "wrangler types --check && vite build",
     "preview": "npm run build && wrangler pages dev",
     "prepare": "svelte-kit sync || echo ''",
     "check": "wrangler types --check && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "gen": "wrangler types",
-    "deploy": "npm run build && wrangler pages deploy",
+    "deploy": "npm run deploy-build && wrangler pages deploy",
     "cf-typegen": "wrangler types src/worker-configuration.d.ts"
   },
   "devDependencies": {
