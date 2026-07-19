@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-cloudflare": "^7.2.9",
+    "@sveltejs/adapter-static": "^3.0.10",
     "@sveltejs/kit": "^2.63.0",
     "@sveltejs/vite-plugin-svelte": "^7.1.2",
     "@types/node": "^26.1.1",
@@ -25,5 +26,9 @@
     "typescript": "^6.0.3",
     "vite": "^8.0.16",
     "wrangler": "^4.112.0"
+  },
+  "dependencies": {
+    "layerchart": "^2.0.2",
+    "toml": "^5.0.0"
   }
 }

@@ -1,0 +1,20 @@
+---
+[meta]
+title = "Test Post"
+date = 2026-07-19
+description = """
+This is a test post description"""
+---
+
+<script lang="ts">
+    import MyPieChart from '$lib/components/Charts/MyPieChart.svelte';
+</script>
+
+# {meta.title}
+
+This is a test post.
+
+<MyPieChart title="Client separation" data=
+    {[{ users: 368818, client: "stable" },
+    { users: 470201, client: "lazer" },
+    { users: 16132, client: "both" }]}/>

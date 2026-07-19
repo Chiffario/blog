@@ -13,8 +13,7 @@
 		"moduleResolution": "bundler",
 		"types": [
 			"./worker-configuration.d.ts",
-			"node",
-			"src/worker-configuration.d.ts"
+			"node"
 		]
 	}
 }
