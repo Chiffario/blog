@@ -1,14 +1,38 @@
 <script lang="ts">
+	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
 
 	let { children } = $props();
+	let year = new Date().getFullYear();
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-{@render children()}
+<div class="container center">
+	<header class="header">
+		<div class="header__inner">
+			<div class="header__logo">
+				<a href="/">
+					<div class="logo">Chiffa's blog</div>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="content">
+		{@render children()}
+	</div>
+
+	<footer class="footer">
+		<div class="footer__inner">
+			<div class="copyright copyright--user">
+				<span>© {year} Chiffa's blog</span>
+			</div>
+		</div>
+	</footer>
+</div>
 
 <style>
     :root {
@@ -79,6 +103,16 @@
             --stable: var(--ctp-mocha-blue);
             --lazer: var(--ctp-mocha-pink);
             --both: var(--ctp-mocha-green);
+            /* Detailed chart colors */
+            --stable-old: var(--ctp-mocha-blue);
+            --stable-new: var(--ctp-mocha-sapphire);
+            --lazer-old: var(--ctp-mocha-pink);
+            --lazer-new: var(--ctp-mocha-flamingo);
+            --both-old: var(--ctp-mocha-green);
+            --both-new: var(--ctp-mocha-yellow);
+
+            /* Chart surfaces */
+            --surface0: var(--ctp-mocha-surface0);
         }
     }
     @media (prefers-color-scheme: light) {
@@ -93,26 +127,17 @@
             --stable: var(--ctp-latte-blue);
             --lazer: var(--ctp-latte-pink);
             --both: var(--ctp-latte-green);
-        }
-    }
 
-    :global {
-        :root {
-            margin: 0;
-            padding: 0;
-            background-color: var(--background);
-            color: var(--text);
-        }
-        h2 {
-            margin: 0;
-            padding: 0;
-        }
-        a {
-            color: var(--url);
+            /* Detailed chart colors */
+            --stable-old: var(--ctp-latte-blue);
+            --stable-new: var(--ctp-latte-sapphire);
+            --lazer-old: var(--ctp-latte-pink);
+            --lazer-new: var(--ctp-latte-flamingo);
+            --both-old: var(--ctp-latte-green);
+            --both-new: var(--ctp-latte-yellow);
 
-            &:hover {
-                color: var(--url-hover)
-            }
+            /* Chart surfaces */
+            --surface0: var(--ctp-latte-surface0);
         }
     }
 </style>
