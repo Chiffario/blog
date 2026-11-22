@@ -25,14 +25,15 @@
 <style>
     ul {
         margin: 0;
-        padding: 0.375rem 0.625rem;
+        padding: 0.5rem 0.75rem;
         list-style: none;
-        border: 0.0625rem solid var(--accent);
-        border-radius: var(--radius);
-        background: var(--background);
+        background: var(--background-alt);
         color: var(--foreground);
-        font-size: 0.875rem;
-        line-height: 1.4;
+        border: var(--border);
+        box-shadow: var(--shadow);
+        font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.8125rem;
+        line-height: 1.5;
     }
 
     li {

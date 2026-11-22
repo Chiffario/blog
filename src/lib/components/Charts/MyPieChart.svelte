@@ -24,12 +24,12 @@
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        margin: 1.25rem auto;
+        margin: 2rem auto;
         padding: 1.25rem;
-        border: 0.3125rem solid var(--accent);
-        border-radius: var(--radius);
         background: var(--background);
         color: var(--foreground);
+        border: var(--border);
+        box-shadow: var(--shadow);
 
         /* LayerChart falls back to these for legend/tooltip text. */
         --color-surface-100: var(--background);
@@ -43,20 +43,28 @@
         height: 18.75rem !important;
     }
 
+    .chart-box :global(.lc-pie-arc) {
+        stroke: var(--ink);
+        stroke-width: 0.125rem;
+    }
+
     .chart-box :global(.lc-legend-container) {
         right: -8em;
         max-width: 7em;
-        padding: 0.25rem 0.5rem;
-        background: var(--surface0, var(--background));
+        padding: 0.35rem 0.5rem;
+        background: var(--background-alt);
         color: var(--foreground);
+        border: var(--border-thin);
+        box-shadow: var(--shadow-sm);
     }
 
     .chart-box :global(.lc-legend-title) {
-        font: inherit;
-        font-size: 0.8rem;
+        font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.7rem;
+        font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.1em;
-        color: color-mix(in srgb, var(--foreground) 65%, transparent);
+        letter-spacing: 0.08em;
+        color: var(--muted);
     }
 
     .chart-box :global(.lc-legend-swatch-button) {
@@ -68,15 +76,30 @@
         cursor: pointer;
     }
 
+    .chart-box :global(.lc-legend-swatch-button:focus-visible) {
+        outline: var(--border-width) solid var(--link);
+        outline-offset: 0.1875rem;
+    }
+
+    .chart-box :global(.lc-legend-swatch) {
+        border: var(--border-thin);
+        border-radius: 0;
+    }
+
     .chart-box :global(.lc-legend-swatch-label) {
         color: var(--foreground);
-        font-size: 0.8rem;
+        font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.75rem;
+        font-weight: 700;
     }
 
     .chart-box h2 {
         margin: 0 0 1rem;
-        text-align: center;
         color: var(--foreground);
+        font-size: 1.125rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
     }
 
     @media (max-width: 42.75em) {
