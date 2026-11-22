@@ -1,5 +1,7 @@
 import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-cloudflare';
+import { callouts } from '@mdsvex/plugin-callouts';
+import { anchors } from '@mdsvex/plugin-anchors';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import { parse } from 'toml';
@@ -11,7 +13,9 @@ export default defineConfig({
 			frontmatter: {
 				parse: (raw) => parse(raw)
 			},
-			smart_punctuation: true
+      smart_punctuation: true,
+      heading_ids: true,
+			plugins: [anchors({ position: "wrap", attrs: { class: "anchor"}}), callouts()],
 		}),
 		sveltekit({
 			compilerOptions: {

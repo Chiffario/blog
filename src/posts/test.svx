@@ -59,11 +59,11 @@ The issue with the tweet (intentionally not linked to not provoke harassment tow
 
 ## Discussing and elaborating on some common takes
 
-> Note:
->
-> - Date range used: 2026-06-15 to 2026-07-14, a month since I started collecting data manually and not depend on osu!alternative data dumps;
-> - User ID threshold for "newgens" - 38 million (join date - after June 8th 2025, as seen through user [ulian](https://osu.ppy.sh/users/38000000)). It was chosen due to being a dumb looking spike on the chart posted without my consent. Moving the threshold to the start of the spike (34M) doesn't affect values all that much;
-> - Client "preference" threshold - 70% of scores on the same client.
+:::note
+- Date range used: 2026-06-15 to 2026-07-14, a month since I started collecting data manually and not depend on osu!alternative data dumps;
+- User ID threshold for "newgens" - 38 million (join date - after June 8th 2025, as seen through user [ulian](https://osu.ppy.sh/users/38000000)). It was chosen due to being a dumb looking spike on the chart posted without my consent. Moving the threshold to the start of the spike (34M) doesn't affect values all that much;
+- Client "preference" threshold - 70% of scores on the same client.
+:::
 
 ---
 
@@ -73,7 +73,9 @@ I'll "debunk" this really quickly, as nobody really says it ever since the data 
 
 !\[/img/lazer/general\_growth.png\]
 
-> Note: I have a small gap in backtracked data, and, given it was scraped from Internet Archive, it's a miracle the gap is only about 10 days long
+:::warning
+I have a small gap in backtracked data, and, given it was scraped from Internet Archive, it's a miracle the gap is only about 10 days long
+:::
 
 ---
 

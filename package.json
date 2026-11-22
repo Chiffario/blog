@@ -16,6 +16,8 @@
     "cf-typegen": "wrangler types src/worker-configuration.d.ts"
   },
   "devDependencies": {
+    "@mdsvex/plugin-anchors": "^0.1.1",
+    "@mdsvex/plugin-callouts": "^0.1.1",
     "@sveltejs/adapter-cloudflare": "^8.0.0",
     "@sveltejs/adapter-static": "^4.0.0",
     "@sveltejs/kit": "^3.0.0",
