@@ -1,4 +1,4 @@
-import { getAllPosts, getPost } from '$lib/posts';
+import { getAllPosts, getPost } from '#lib/posts.ts';
 import { error } from '@sveltejs/kit';
 
 export function entries() {

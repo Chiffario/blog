@@ -6,6 +6,13 @@ import { parse } from 'toml';
 
 export default defineConfig({
 	plugins: [
+		mdsvex({
+			extensions: ['.svx', '.md'],
+			frontmatter: {
+				parse: (raw) => parse(raw)
+			},
+			smart_punctuation: true
+		}),
 		sveltekit({
 			compilerOptions: {
 				// Force runes mode for the project, except for libraries. Can be removed in svelte 6.
@@ -14,20 +21,7 @@ export default defineConfig({
 				warningFilter: (warning) =>
 					!warning.code?.startsWith('script_context_deprecated')
 			},
-			adapter: adapter(),
-      preprocess: [mdsvex({
-        extensions: ['.svx', '.md'], frontmatter: {
-          marker: "-",
-          type: "toml",
-          parse(frontmatter, messages) {
-            try {
-              return parse(frontmatter);
-            } catch (e) {
-              console.log("Failed to parse toml", e)
-            }
-          }
-			}})],
-			extensions: ['.svelte', '.svx', '.md']
+			adapter: adapter()
 		})
 	]
 });

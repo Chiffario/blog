@@ -1,6 +1,5 @@
 <script lang="ts">
-    import BlogSummary from '$lib/components/BlogSummary.svelte';
-    import MyPieChart from '$lib/components/Charts/MyPieChart.svelte';
+    import BlogSummary from '#lib/components/BlogSummary.svelte';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
