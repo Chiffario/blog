@@ -3,7 +3,9 @@
 title = "Test Post"
 date = 2026-07-19
 description = """
-This is a test post description"""
+This is a test post description
+"""
+hidden = false
 ---
 
 <script lang="ts">

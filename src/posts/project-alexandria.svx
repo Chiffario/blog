@@ -1,0 +1,15 @@
+---
+[meta]
+title = "arewelazeryet 1.0 & osu! Library of Alexandria"
+date = 2026-12-01
+description = """
+I love data more than I love my life, but I love osu! as much as I love data, so let's combine these two passions in a way that helps everyone
+"""
+hidden = true
+---
+
+I LOVE data. Data is awesome, you can learn so much from it, you can represent it in very cool and satisfying ways, and you can prove (or disprove!) interesting ideas and points based on it.
+
+osu! is a very unique game. It has a lot of very public data thanks to APIv2, which a lot of projects use for various reasons - you have custom leaderboards for metrics osu! itself doesn't track directly, like [rxvault](https://rx.stanr.info/), [lazerboard](https://lazerboard.melguy.com/), [osu!alternative](https://osualternative.com/) and many many others. People also build bots, like Bathbot or owobot, that display information on platforms like Discord. You have data analysis projects, such as recommendation engines, e.g. [bobert](https://bobert-web.pages.dev/) or [alphaosu](https://alphaosu.keytoix.vip/). And all of these build on the fact that the game is very open with its data, and peppy is a very supporting developer (as long as you don't violate his rules).
+
+All of this is to say that osu!, software development and especially data collection and analysis are a combination made in heaven, which easily explains why I, a massive nerd, am still here,

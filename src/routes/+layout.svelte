@@ -6,10 +6,6 @@
 	let year = new Date().getFullYear();
 </script>
 
-<svelte:head>
-	<link rel="icon" href={favicon} />
-</svelte:head>
-
 <div class="container center">
 	<header class="header">
 		<div class="header__inner">

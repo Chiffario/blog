@@ -4,6 +4,7 @@ type PostModule = {
 	default: Component;
 	slug: string;
 	metadata: PostMeta;
+  hidden: boolean;
 };
 
 const modules: Record<string, PostModule> = import.meta.glob('/src/posts/*.svx', {
@@ -19,6 +20,7 @@ export type Metadata = {
   title: string;
   date: string;
   description: string;
+  hidden: boolean;
 }
 
 export interface Post extends PostMeta {
@@ -37,6 +39,7 @@ function toPostMeta(slug: string, mod: PostModule): PostMeta {
       title: mod.metadata.meta.title ?? slug,
       date: mod.metadata.meta.date ?? '',
       description: mod.metadata.meta.description ?? '',
+      hidden: mod.metadata.meta.hidden ?? false,
     }
 	};
 }
